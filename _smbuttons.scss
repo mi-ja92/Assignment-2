@@ -1,0 +1,116 @@
+$slide: width 1s ease-in;
+$slidewidth: 300px;
+
+@mixin buttons {
+  margin: 0;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-size: 30px;
+  margin-left: auto;
+  text-decoration: underline;
+  transition: translateX(200px);
+}
+*a {
+  display: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.smbtns {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  float: right;
+  width: 300px;
+  height: 250px;
+}
+
+.link1 {
+  display: none;
+}
+.btn1 {
+  @include buttons;
+  background-color: #e17b77;
+
+  &:hover {
+    width: $slidewidth;
+    transition: $slide;
+    transition: translateX(20px);
+  }
+  &:hover a {
+    display: contents;
+    color: white;
+  }
+}
+.link2 {
+  display: none;
+}
+.btn2 {
+  background-color: #3b5998;
+  @include buttons;
+  &:hover {
+    width: $slidewidth;
+    transition: $slide;
+    transition: translateX(20px);
+  }
+  &:hover a {
+    display: contents;
+    color: white;
+  }
+}
+
+.link3 {
+  display: none;
+}
+.btn3 {
+  background-color: #00aced;
+  @include buttons;
+  &:hover {
+    width: $slidewidth;
+    transition: $slide;
+    transition: translateX(20px);
+  }
+  &:hover a {
+    display: contents;
+    color: white;
+  }
+}
+.link4 {
+  display: none;
+}
+.btn4 {
+  background-color: #333;
+  @include buttons;
+  &:hover {
+    width: $slidewidth;
+    transition: $slide;
+    transition: translateX(20px);
+  }
+  &:hover a {
+    display: contents;
+    color: white;
+  }
+}
+.link5 {
+  display: none;
+}
+.btn5 {
+  background-color: #007bb6;
+  @include buttons;
+  &:hover {
+    width: $slidewidth;
+    transition: $slide;
+    transition: translateX(20px);
+  }
+  &:hover a {
+    display: contents;
+    color: white;
+  }
+}

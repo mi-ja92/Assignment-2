@@ -1,0 +1,85 @@
+$borderclr: #90949d 2px solid;
+
+@mixin borderrl {
+  border-left: $borderclr;
+  border-right: $borderclr;
+}
+
+.testimonial {
+  background-color: #c3cfe2;
+  width: 720px;
+  height: 830px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+.borderbox {
+  background-color: #fff;
+  width: 642px;
+  height: 500px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  border-left: #b8bcc5 solid 2px;
+  border-right: #b8bcc5 solid 2px;
+  border-top: none;
+  box-shadow: 10px 20px 50px darkslategray;
+}
+.text1 {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 30px;
+  transform: translateY(50px);
+  font-weight: 600;
+  font-size: 27px;
+  color: #6d6969;
+}
+
+.portrait {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: solid white 8px;
+  transform: translateY(100px);
+  margin: 0;
+}
+
+.footer {
+  background-color: #686de0;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 642px;
+  height: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include borderrl();
+  border-bottom: $borderclr;
+  box-shadow: 10px 20px 50px darkslategray;
+}
+
+.footera {
+  transform: translateY(20px);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.footerb {
+  color: #c3cfe2;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/*didn't add mediaqueries for the first part as it was not required so it's not responsive*/

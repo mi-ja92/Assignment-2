@@ -1,0 +1,616 @@
+@import "transitions", "testimonial", "smbuttons";
+$transformtablet: translateX(140px) translateY(170px);
+$transformobile: translateX(140px) translateY(170px);
+
+@mixin stockf {
+  width: 415px;
+  height: 415px;
+  border-radius: 15px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 35px;
+}
+
+@mixin transf {
+  transition-property: background;
+  transition: ease-out;
+  transition-duration: 500ms;
+  position: absolute;
+}
+
+@mixin mobile {
+  height: 415px;
+  width: 415px;
+}
+@mixin tablet {
+  height: 300px;
+  width: 300px;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 600px) {
+  .prtfgrid {
+    background-color: #c3cfe2;
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .stock1 {
+    @include mobile();
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .stock2 {
+    @include mobile();
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .stock3 {
+    @include mobile();
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .stock4 {
+    @include mobile();
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .stock5 {
+    @include mobile();
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .stock6 {
+    @include mobile();
+    grid-area: 6 / 1 / 7 / 2;
+  }
+  .stock7 {
+    @include mobile();
+    grid-area: 7 / 1 / 8 / 2;
+  }
+  /*foto1*/
+  .photo1 {
+    @include mobile();
+    @include transf();
+  }
+  .stock1:hover .readmore1 {
+    grid-area: 1 / 1 / 2 / 2;
+    transform: $transformobile;
+    opacity: 1;
+  }
+  .readmore1 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+  .stock1:hover .photo1 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+  /*foto2*/
+  .photo2 {
+    @include mobile();
+    @include transf();
+  }
+  .readmore2 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock2:hover .readmore2 {
+    grid-area: 2 / 1 / 3 / 2;
+    transform: $transformobile;
+    opacity: 1;
+  }
+
+  .stock2:hover .photo2 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto3*/
+  .photo3 {
+    @include mobile();
+    @include transf();
+  }
+  .readmore3 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock3:hover .readmore3 {
+    grid-area: 3 / 1 / 4 / 2;
+    transform: $transformobile;
+    opacity: 1;
+  }
+
+  .stock3:hover .photo3 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto4*/
+  .photo4 {
+    @include mobile();
+    @include transf();
+  }
+  .readmore4 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock4:hover .readmore4 {
+    grid-area: 4 / 1 / 5 / 2;
+    transform: $transformobile;
+    opacity: 1;
+  }
+
+  .stock4:hover .photo4 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto5*/
+  .photo5 {
+    @include mobile();
+    @include transf();
+  }
+  .readmore5 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock5:hover .readmore5 {
+    grid-area: 5 / 1 / 6 / 2;
+    transform: $transformobile;
+    opacity: 1;
+  }
+
+  .stock5:hover .photo5 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto6*/
+  .photo6 {
+    @include mobile();
+    @include transf();
+  }
+  .readmore6 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock6:hover .readmore6 {
+    grid-area: 6 / 1 / 7 / 2;
+    transform: $transformobile;
+    opacity: 1;
+  }
+
+  .stock6:hover .photo6 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto7*/
+  .photo7 {
+    @include mobile();
+    @include transf();
+  }
+  .readmore7 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock7:hover .readmore7 {
+    grid-area: 7 / 1 / 8 / 2;
+    transform: $transformobile;
+    opacity: 1;
+  }
+
+  .stock7:hover .photo7 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+}
+
+/*I'm afraid the mobile version not working and I don't know why*/
+
+/*Tablet*/
+
+@media only screen and (min-width: 768px) {
+  .prtfgrid {
+    background-color: #c3cfe2;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(4, 350px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-size: 100%;
+  }
+
+  .stock1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .stock2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .stock3 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .stock4 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .stock5 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .stock6 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .stock7 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  /*foto1*/
+
+  .photo1 {
+    @include tablet();
+    @include transf();
+  }
+  .stock1:hover .readmore1 {
+    grid-area: 1 / 1 / 2 / 2;
+    transform: $transformtablet;
+    opacity: 1;
+  }
+  .readmore1 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+  .stock1:hover .photo1 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+  /*foto2*/
+  .photo2 {
+    @include tablet();
+    @include transf();
+  }
+  .readmore2 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock2:hover .readmore2 {
+    grid-area: 1 / 2 / 2 / 3;
+    transform: $transformtablet;
+    opacity: 1;
+  }
+
+  .stock2:hover .photo2 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto3*/
+  .photo3 {
+    @include tablet();
+    @include transf();
+  }
+  .readmore3 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock3:hover .readmore3 {
+    grid-area: 2 / 1 / 3 / 2;
+    transform: $transformtablet;
+    opacity: 1;
+  }
+
+  .stock3:hover .photo3 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto4*/
+  .photo4 {
+    @include tablet();
+    @include transf();
+  }
+  .readmore4 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock4:hover .readmore4 {
+    grid-area: 2 / 2 / 3 / 3;
+    transform: $transformtablet;
+    opacity: 1;
+  }
+
+  .stock4:hover .photo4 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto5*/
+  .photo5 {
+    @include tablet();
+    @include transf();
+  }
+  .readmore5 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock5:hover .readmore5 {
+    grid-area: 2 / 2 / 3 / 3;
+    transform: $transformtablet;
+    opacity: 1;
+  }
+
+  .stock5:hover .photo5 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto6*/
+  .photo6 {
+    @include tablet();
+    @include transf();
+  }
+  .readmore6 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock6:hover .readmore6 {
+    grid-area: 3 / 2 / 4 / 3;
+    transform: $transformtablet;
+    opacity: 1;
+  }
+
+  .stock6:hover .photo6 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto7*/
+  .photo7 {
+    @include tablet();
+    @include transf();
+  }
+  .readmore7 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock7:hover .readmore7 {
+    grid-area: 4 / 1 / 5 / 2;
+    transform: $transformtablet;
+    opacity: 1;
+  }
+
+  .stock7:hover .photo7 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1200px) {
+  .prtfgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-template-rows: repeat(3, 450px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #c3cfe2;
+  }
+
+  .stock1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .photo1 {
+    @include stockf();
+    @include transf();
+  }
+  /*.......*/
+  .stock2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .photo2 {
+    @include stockf();
+    @include transf();
+  }
+  /*......*/
+  .stock3 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .photo3 {
+    @include stockf();
+    @include transf();
+  }
+  /*....*/
+
+  .stock4 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .photo4 {
+    @include stockf();
+    @include transf();
+  }
+  /*....*/
+  .stock5 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .photo5 {
+    @include stockf();
+    @include transf();
+  }
+  .stock6 {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .photo6 {
+    @include stockf();
+    @include transf();
+  }
+
+  .stock7 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .photo7 {
+    @include stockf();
+    @include transf();
+  }
+
+  /*foto1*/
+  .stock1:hover .readmore1 {
+    grid-area: 1 / 1 / 2 / 2;
+    transform: translateX(180px) translateY(230px);
+    opacity: 1;
+  }
+  .readmore1 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+  .stock1:hover .photo1 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+  /*foto2*/
+
+  .readmore2 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock2:hover .readmore2 {
+    grid-area: 1 / 2 / 2 / 3;
+    transform: translateX(180px) translateY(230px);
+    opacity: 1;
+  }
+
+  .stock2:hover .photo2 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto3*/
+
+  .readmore3 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock3:hover .readmore3 {
+    grid-area: 1 / 3 / 2 / 4;
+    transform: translateX(180px) translateY(230px);
+    opacity: 1;
+  }
+
+  .stock3:hover .photo3 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto4*/
+  .readmore4 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock4:hover .readmore4 {
+    grid-area: 2 / 1 / 3 / 2;
+    transform: translateX(180px) translateY(230px);
+    opacity: 1;
+  }
+
+  .stock4:hover .photo4 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto5*/
+  .readmore5 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock5:hover .readmore5 {
+    grid-area: 2 / 2 / 3 / 3;
+    transform: translateX(180px) translateY(230px);
+    opacity: 1;
+  }
+
+  .stock5:hover .photo5 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto6*/
+
+  .readmore6 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock6:hover .readmore6 {
+    grid-area: 2 / 3 / 3 / 4;
+    transform: translateX(180px) translateY(230px);
+    opacity: 1;
+  }
+
+  .stock6:hover .photo6 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+
+  /*foto7*/
+  .readmore7 {
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .stock7:hover .readmore7 {
+    grid-area: 3 / 1 / 4 / 2;
+    transform: translateX(180px) translateY(230px);
+    opacity: 1;
+  }
+
+  .stock7:hover .photo7 {
+    background: #c3cfe2;
+    opacity: 0;
+  }
+}

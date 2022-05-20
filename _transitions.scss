@@ -1,0 +1,140 @@
+@mixin stockf {
+  width: 415px;
+  height: 415px;
+  border-radius: 10px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+@mixin transf {
+  transition-property: background;
+  transition: ease-out;
+  transition-duration: 500ms;
+  position: absolute;
+}
+
+/*foto1*/
+.stock1:hover .readmore1 {
+  grid-area: 1 / 1 / 2 / 2;
+  transform: translateX(180px) translateY(230px);
+  opacity: 1;
+}
+.readmore1 {
+  opacity: 0;
+  width: 100px;
+  height: 30px;
+}
+.stock1:hover .photo1 {
+  background: #c3cfe2;
+  opacity: 0;
+}
+/*foto2*/
+
+.readmore2 {
+  opacity: 0;
+  width: 100px;
+  height: 30px;
+}
+
+.stock2:hover .readmore2 {
+  grid-area: 1 / 2 / 2 / 3;
+  transform: translateX(180px) translateY(230px);
+  opacity: 1;
+}
+
+.stock2:hover .photo2 {
+  background: #c3cfe2;
+  opacity: 0;
+}
+
+/*foto3*/
+
+.readmore3 {
+  opacity: 0;
+  width: 100px;
+  height: 30px;
+}
+
+.stock3:hover .readmore3 {
+  grid-area: 1 / 3 / 2 / 4;
+  transform: translateX(180px) translateY(230px);
+  opacity: 1;
+}
+
+.stock3:hover .photo3 {
+  background: #c3cfe2;
+  opacity: 0;
+}
+
+/*foto4*/
+.readmore4 {
+  opacity: 0;
+  width: 100px;
+  height: 30px;
+}
+
+.stock4:hover .readmore4 {
+  grid-area: 2 / 1 / 3 / 2;
+  transform: translateX(180px) translateY(230px);
+  opacity: 1;
+}
+
+.stock4:hover .photo4 {
+  background: #c3cfe2;
+  opacity: 0;
+}
+
+/*foto5*/
+.readmore5 {
+  opacity: 0;
+  width: 100px;
+  height: 30px;
+}
+
+.stock5:hover .readmore5 {
+  grid-area: 2 / 2 / 3 / 3;
+  transform: translateX(180px) translateY(230px);
+  opacity: 1;
+}
+
+.stock5:hover .photo5 {
+  background: #c3cfe2;
+  opacity: 0;
+}
+
+/*foto6*/
+
+.readmore6 {
+  opacity: 0;
+  width: 100px;
+  height: 30px;
+}
+
+.stock6:hover .readmore6 {
+  grid-area: 2 / 3 / 3 / 4;
+  transform: translateX(180px) translateY(230px);
+  opacity: 1;
+}
+
+.stock6:hover .photo6 {
+  background: #c3cfe2;
+  opacity: 0;
+}
+
+/*foto7*/
+.readmore7 {
+  opacity: 0;
+  width: 100px;
+  height: 30px;
+}
+
+.stock7:hover .readmore7 {
+  grid-area: 3 / 1 / 4 / 2;
+  transform: translateX(180px) translateY(230px);
+  opacity: 1;
+}
+
+.stock7:hover .photo7 {
+  background: #c3cfe2;
+  opacity: 0;
+}
